@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    //git 테스트
     @Bean //스프링 컨테이너에 등록해줌
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
