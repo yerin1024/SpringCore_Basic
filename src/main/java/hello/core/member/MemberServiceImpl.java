@@ -19,5 +19,10 @@ public class MemberServiceImpl implements MemberService{
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
     }
+
+    //@Bean으로 생성할 때 공유되는지 테스트 용도 (memberServiceImpl과 orderServiceImpl비교)
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
 

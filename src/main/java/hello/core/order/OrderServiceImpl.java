@@ -25,4 +25,9 @@ public class OrderServiceImpl implements OrderService{
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+    //@Bean으로 생성할 때 공유되는지 테스트 용도 (memberServiceImpl과 orderServiceImpl비교)
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
