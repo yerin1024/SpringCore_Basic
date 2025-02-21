@@ -12,7 +12,7 @@ import org.springframework.context.annotation.FilterType;
 //=> @ComponsneScan은 프로젝트 최상단 패키지에 두는 것을 권장 (basePackage설정을 생략할 수 있음)
 @Configuration
 @ComponentScan (
-        basePackages = "hello.core.member",
+        basePackages = "hello.core",
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 ) //예제코드 정상동작을 위해 AppConfig 제외하기위함 (@Configuration어노테이션도 들어가보면 @Component를 포함하고있음)
 public class AutoAppConfig {
