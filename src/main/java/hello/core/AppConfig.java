@@ -12,7 +12,7 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class AppConfig {
 
     //@Bean memberService() -> new MemoryMemberRepository()
@@ -33,8 +33,7 @@ public class AppConfig {
     @Bean
     public OrderService orderService() {
         System.out.println("호출 AppConfig.orderService");
-//        return new OrderServiceImpl(memberRepository(), discountPolicy());
-        return null;
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
     @Bean
