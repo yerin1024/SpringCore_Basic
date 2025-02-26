@@ -12,14 +12,4 @@ class CoreApplicationTests {
 	void contextLoads() {
 	}
 
-	@Autowired
-	private ApplicationContext applicationContext;
-
-//	@Test
-//	public void checkBeans() {
-//		String[] beanNames = applicationContext.getBeanDefinitionNames();
-//		for (String beanName : beanNames) {
-//			System.out.println("Bean 등록됨: " + beanName);
-//		}
-//	}
 }
