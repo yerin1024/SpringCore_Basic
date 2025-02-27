@@ -8,7 +8,7 @@ public class CoreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoreApplication.class, args);
-		//git테스트2
+		//git테스트3
 	}
 
 }
